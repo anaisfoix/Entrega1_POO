@@ -61,19 +61,21 @@ public class Funciones {
         }
     }
     public void mostrarProfesores(){
-        System.out.println("Profesores: ");
+        System.out.println("PROFESORES :");
+        System.out.println("");
         for(int i=0; i<this.Profesores.size(); i++){
-            System.out.print(this.Profesores.get(i).getIdProfesor());     // faltaba el idProfesor
-            System.out.print(this.Profesores.get(i).getNombre());
-            System.out.print(this.Profesores.get(i).getApellido());
-            System.out.print(this.Profesores.get(i).getRut());
-            System.out.print(this.Profesores.get(i).getEdad());
-            System.out.print(this.Profesores.get(i).getMail());
+            System.out.print(this.Profesores.get(i).getIdProfesor()+" ");     // faltaba el idProfesor
+            System.out.print(this.Profesores.get(i).getNombre()+" ");
+            System.out.print(this.Profesores.get(i).getApellido()+" ");
+            System.out.print(this.Profesores.get(i).getRut()+" ");
+            System.out.print(this.Profesores.get(i).getEdad()+" ");
+            System.out.print(this.Profesores.get(i).getMail()+" ");
             for(int j=0; j<Profesores.get(i).getSize(); j++){
                 System.out.print(this.Profesores.get(i).getCursos(j)+" ");
             }
             System.out.println("");
         }
+        System.out.println("");
     }
     
     private ArrayList <Estudiante> Estudiantes = new ArrayList <Estudiante>();
@@ -118,17 +120,19 @@ public class Funciones {
         }
     }
     public void mostrarEstudiantes(){
-        System.out.println("Estudiantes: ");
+        System.out.println("ESTUDIANTES :");
+        System.out.println("");
         for(int i=0; i<this.Estudiantes.size(); i++){
-            System.out.print(this.Estudiantes.get(i).getNombre());
-            System.out.print(this.Estudiantes.get(i).getApellido());
-            System.out.print(this.Estudiantes.get(i).getRut());
-            System.out.print(this.Estudiantes.get(i).getMail());
+            System.out.print(this.Estudiantes.get(i).getNombre()+" ");
+            System.out.print(this.Estudiantes.get(i).getApellido()+" ");
+            System.out.print(this.Estudiantes.get(i).getRut()+" ");
+            System.out.print(this.Estudiantes.get(i).getMail()+" ");
             for(int j=0; j<Estudiantes.get(i).getSizeCursosMatriculados(); j++){
                 System.out.print(this.Estudiantes.get(i).getCursosMatriculados(j)+" ");
             }
             System.out.println("");
         }
+        System.out.println("");
     }
     
     private ArrayList <Curso> Cursos = new ArrayList <Curso>();
@@ -179,15 +183,18 @@ public class Funciones {
     }
 }
     public void mostrarCursos(){
+        System.out.println("Cursos :");
+        System.out.println("");
         for(int i=0; i<this.Cursos.size(); i++){
-            System.out.println(this.Cursos.get(i).getNombre());
-            System.out.println(this.Cursos.get(i).getClaveCurso());
-            System.out.println(this.Cursos.get(i).getCantidadAlumnos());
-            System.out.println(this.Cursos.get(i).getFechaInicio());
-            System.out.println(this.Cursos.get(i).getFechaTermino());
-            System.out.println(this.Cursos.get(i).getCategoria());
-            System.out.println(this.Cursos.get(i).getIdProfesor());
+            System.out.print(this.Cursos.get(i).getNombre()+" ");
+            System.out.print(this.Cursos.get(i).getClaveCurso()+" ");
+            System.out.print(this.Cursos.get(i).getCantidadAlumnos()+" ");
+            System.out.print(this.Cursos.get(i).getFechaInicio()+" ");
+            System.out.print(this.Cursos.get(i).getFechaTermino()+" ");
+            System.out.print(this.Cursos.get(i).getCategoria()+" ");
+            System.out.print(this.Cursos.get(i).getIdProfesor()+" ");
             System.out.println("");
         }
+        System.out.println("");
     }
 }
